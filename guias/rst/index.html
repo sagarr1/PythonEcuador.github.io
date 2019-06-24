@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# " lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini tutorial de reStructuredText | Python Ecuador</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../rss.xml">
+<link rel="canonical" href="https://pythonecuador.org/guias/rst/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../icon_128x128.ico" sizes="128x128">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-128414584-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128414584-1');
+</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../assets/css/custom.css" type="text/css" media="all">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Mostrar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://pythonecuador.org/">
+
+                <span id="blog-title">Python Ecuador</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../nuestra-comunidad/">Comunidad</a>
+                </li>
+<li>
+<a href="../../eventos/">Eventos</a>
+                </li>
+<li>
+<a href="../../coc/">Código de Conducta</a>
+                </li>
+<li>
+<a href="../../quiero-ayudar/">Quiero ayudar</a>
+                </li>
+<li>
+<a href="../">Guías</a>
+                </li>
+<li>
+<a href="../../becas/">Becas</a>
+                </li>
+<li>
+<a href="../../sponsors/">Sponsors</a>
+                </li>
+<li>
+<a href="../../quienes-somos/">¿Quiénes somos?</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+  <div class="content padding-top margin-bottom">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        
+  <h1>
+    <a href=".">Mini tutorial de reStructuredText</a>
+  </h1>
+
+  <div>
+<p>Esta guía es una breve introducción a los conceptos y la sintaxis de reStructuredText (reST).</p>
+<p>restructuredText es legible y simple, pero lo suficientemente potente para un uso no trivial.
+Es útil para la documentación de programas en línea (como las cadenas de documentación de Python),
+para crear rápidamente páginas web simples y para documentos independientes.</p>
+<div class="contents topic" id="contenidos">
+<p class="topic-title first">Contenidos</p>
+<ul class="simple">
+<li><a class="reference internal" href="#parrafo" id="id1">Párrafo</a></li>
+<li><a class="reference internal" href="#formato-de-texto-en-linea" id="id2">Formato de texto en línea</a></li>
+</ul>
+</div>
+<div class="section" id="parrafo">
+<h2><a class="toc-backref" href="#id1">Párrafo</a></h2>
+<p>El párrafo es el bloque más básico en un documento reST.
+Los párrafos son simplemente trozos de texto separados por una o más líneas en blanco.
+Al igual que en Python, la sangría es significativa en reST,
+por lo que todas las líneas del mismo párrafo deben alinearse a la izquierda con el mismo nivel de sangría.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="54%">
+<col width="46%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head">Texto Plano</th>
+<th class="head">Resultado</th>
+</tr></thead>
+<tbody valign="top"><tr>
+<td>
+<p class="first"><tt class="docutils literal">Este es un párrafo.</tt></p>
+<p class="last"><tt class="docutils literal">Los párrafos se alinean al</tt>
+<tt class="docutils literal">borde izquierdo y</tt>
+<tt class="docutils literal">normalmente están separados</tt>
+<tt class="docutils literal">por líneas en blanco.</tt></p>
+</td>
+<td>
+<p class="first">Este es un párrafo.</p>
+<p class="last">Los párrafos se alinean al
+borde izquierdo y
+normalmente están separados
+por líneas en blanco.</p>
+</td>
+</tr></tbody>
+</table>
+</div>
+<div class="section" id="formato-de-texto-en-linea">
+<h2><a class="toc-backref" href="#id2">Formato de texto en línea</a></h2>
+<p>El formato de texto en línea permite que las palabras y frases dentro del texto tengan estilos de caracteres (como cursiva y negrita) y funcionalidad (como hipervínculos).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="51%">
+<col width="49%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head">Texto Plano</th>
+<th class="head">Resultado</th>
+</tr></thead>
+<tbody valign="top"><tr>
+<td>
+<div class="first last line-block">
+<div class="line"><tt class="docutils literal">*itálica*</tt></div>
+<div class="line"><tt class="docutils literal">**negrilla**</tt></div>
+<div class="line"><tt class="docutils literal">`link <span class="pre">&lt;https://pythonecuador.org&gt;`__</span></tt></div>
+<div class="line"><tt class="docutils literal">normalmente están separados</tt></div>
+<div class="line"><tt class="docutils literal">por líneas en blanco.</tt></div>
+</div>
+</td>
+<td>
+<div class="first last line-block">
+<div class="line"><em>itálica</em></div>
+<div class="line"><strong>negrilla</strong></div>
+<div class="line"><a class="reference external" href="https://pythonecuador.org">link</a></div>
+<div class="line">normalmente están separados</div>
+<div class="line">por líneas en blanco.</div>
+</div>
+</td>
+</tr></tbody>
+</table>
+</div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+        </div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="content">
+    <p id="followus">
+        <strong>Síguenos y forma parte de nuestra comunidad</strong>
+    </p>
+    <div class="row">
+        <div class="col">
+            <ul class="list-inline social text-center">
+<li class="list-inline-item"><a href="https://www.facebook.com/pyecuador/"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item">
+<a href="https://www.meetup.com/es-ES/python-ecuador/"><i class="fa fa-meetup"></i></a>
+                </li>
+<li class="list-inline-item"><a href="https://github.com/PythonEcuador"><i class="fa fa-github"></i></a></li>
+                <li class="list-inline-item"><a href="https://t.me/pythonecuador"><i class="fa fa-telegram"></i></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/pyecuador"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+</div>
+        
+    </div>
+    <div class="row">
+        <div class="text-center">
+            <p>Comunidad Python Ecuador</p>
+            <small>© 2019 Todos los derechos reservados.</small>
+            <p>
+                <small>
+                    ¿Encontraste un error?
+                    <a href="https://pythonecuador.org/guias/colaborar/#reportando-errores-bugs">¡Repórtalo!</a>
+                </small>
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
