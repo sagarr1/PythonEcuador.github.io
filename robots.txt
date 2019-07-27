@@ -1,4 +1,4 @@
-Sitemap: https://pythonecuador.org/sitemapindex.xml
+Sitemap: https://python.ec/sitemapindex.xml
 
 User-Agent: *
-Host: pythonecuador.org
+Host: python.ec
