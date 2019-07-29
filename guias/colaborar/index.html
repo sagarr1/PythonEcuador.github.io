@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# " lang="es">
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,63 +8,64 @@
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="https://python.ec/guias/colaborar/">
 <link rel="icon" href="../../favicon.ico" sizes="16x16">
 <link rel="icon" href="../../icon_128x128.ico" sizes="128x128">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-128414584-1"></script><script>
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><!-- Custom css --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../assets/css/custom.css" type="text/css" media="all">
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-128414584-1"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-128414584-1');
-</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../../assets/css/custom.css" type="text/css" media="all">
+</script>
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Mostrar navegación</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://python.ec/">
+        <a class="navbar-brand" href="https://python.ec/">
 
-                <span id="blog-title">Python Ecuador</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="../../nuestra-comunidad/">Comunidad</a>
+            <span id="blog-title">Python Ecuador</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../nuestra-comunidad/" class="nav-link">Comunidad</a>
                 </li>
-<li>
-<a href="../../coc/">Código de Conducta</a>
+<li class="nav-item">
+<a href="../../archive.html" class="nav-link">Posts</a>
                 </li>
-<li>
-<a href="../../quiero-ayudar/">Quiero ayudar</a>
+<li class="nav-item">
+<a href="../../coc/" class="nav-link">Código de Conducta</a>
                 </li>
-<li>
-<a href="../">Guías</a>
+<li class="nav-item">
+<a href="../../quiero-ayudar/" class="nav-link">Quiero ayudar</a>
                 </li>
-<li>
-<a href="../../becas/">Becas</a>
+<li class="nav-item">
+<a href="../" class="nav-link">Guías</a>
                 </li>
-<li>
-<a href="../../sponsors/">Sponsors</a>
+<li class="nav-item">
+<a href="../../becas/" class="nav-link">Becas</a>
+                </li>
+<li class="nav-item">
+<a href="../../sponsors/" class="nav-link">Sponsors</a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="navbar-nav navbar-right"></ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -71,12 +73,11 @@
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
-            
-  <div class="content padding-top margin-bottom">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
+        
+        
+  <div class="container pt mb">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
         
   <h1>
     <a href=".">Colaborar</a>
@@ -131,8 +132,8 @@ no dudes en preguntar en <a class="reference external" href="https://t.me/python
 <p>Este proyecto usa Python 3, puedes descargarlo desde <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.
 Para verificar que tienes Python 3 en tu sistema ejecuta el siguiente comando en una terminal
 (ventana de comandos):</p>
-<pre class="code console"><a name="rest_code_25a031d7a23448f48a5a4029b80b9251-1"></a><span class="gp">$</span> python --version
-<a name="rest_code_25a031d7a23448f48a5a4029b80b9251-2"></a><span class="go">Python 3.6.5</span>
+<pre class="code console"><a name="rest_code_f1943d6a44b9406baf6d496f1b174e37-1"></a><span class="gp">$</span> python --version
+<a name="rest_code_f1943d6a44b9406baf6d496f1b174e37-2"></a><span class="go">Python 3.6.5</span>
 </pre>
 <p>Si la salida del comando es diferente, no te preocupes, sólo debes asegurarte que el primer número sea un <tt class="docutils literal">3</tt>.
 En caso que la salida haya sido algo como <tt class="docutils literal">2.7.14</tt>, intenta con el comando <tt class="docutils literal">python3 <span class="pre">--version</span></tt>.</p>
@@ -151,28 +152,28 @@ debes usar ese comando.</p>
 puedes descargar Git desde <a class="reference external" href="https://git-scm.com/download">https://git-scm.com/download</a>.</p>
 <p>Luego de instalar Git se debe configurar el usuario y el correo electrónico con
 los siguientes comandos:</p>
-<pre class="code bash"><a name="rest_code_6718094e1ab14d958bfd3e501f2fb659-1"></a>git config --global user.name <span class="s2">"Juanito Perez"</span>
-<a name="rest_code_6718094e1ab14d958bfd3e501f2fb659-2"></a>git config --global user.email <span class="s2">"juanito@perez.com"</span>
+<pre class="code bash"><a name="rest_code_ae63cec91f3f4871bcfab059df47a720-1"></a>git config --global user.name <span class="s2">"Juanito Perez"</span>
+<a name="rest_code_ae63cec91f3f4871bcfab059df47a720-2"></a>git config --global user.email <span class="s2">"juanito@perez.com"</span>
 </pre>
 <p>Debes tener una cuenta en <a class="reference external" href="https://github.com/">GitHub</a>, inicia sesión,
 dirígete al <a class="reference external" href="https://github.com/PythonEcuador/PythonEcuador.github.io">proyecto de Python Ecuador</a>
 y presiona el botón <tt class="docutils literal">Fork</tt> para hacer un fork del proyecto en tu cuenta.</p>
 <img alt="/images/guias/colaborar/fork.png" class="align-center" src="../../images/guias/colaborar/fork.png"><p>Ejecuta el siguiente comando en una terminal para obtener el código.
 Donde <tt class="docutils literal"><span class="pre">{tu-usuario}</span></tt> es tu usuario de GitHub.</p>
-<pre class="code bash"><a name="rest_code_e73efe2b8bd44fb2b8ce494fae1e1799-1"></a>git clone https://github.com/<span class="o">{</span>tu-usuario<span class="o">}</span>/PythonEcuador.github.io.git
+<pre class="code bash"><a name="rest_code_6ddc9d99236a4a039c4676958de45ab8-1"></a>git clone https://github.com/<span class="o">{</span>tu-usuario<span class="o">}</span>/PythonEcuador.github.io.git
 </pre>
 <p>Por ejemplo, para el usuario <tt class="docutils literal">Marlon5300</tt>:</p>
-<pre class="code bash"><a name="rest_code_efe4585c541d445b971fdf7fcf3a8e4f-1"></a>git clone https://github.com/Marlon5300/PythonEcuador.github.io.git
+<pre class="code bash"><a name="rest_code_6a90993c79d847ffa6ed9a11961c787e-1"></a>git clone https://github.com/Marlon5300/PythonEcuador.github.io.git
 </pre>
 <p>Entra al directorio que contiene el código fuente con</p>
-<pre class="code bash"><a name="rest_code_52f521d2385842859a24bcff7c991412-1"></a><span class="nb">cd</span> PythonEcuador.github.io
+<pre class="code bash"><a name="rest_code_ec82f1274bdd4913807d2c74e58b9f7b-1"></a><span class="nb">cd</span> PythonEcuador.github.io
 </pre>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
 <p>El desarrollo se lleva a cabo sobre la rama <tt class="docutils literal">src</tt>.
 Por defecto tu repositorio debe estar en esta rama.
 Si tienes dudas ejecuta:</p>
-<div class="last"><pre class="code bash"><a name="rest_code_0c47c251b5474301b57d9bdd51e4322b-1"></a>git checkout src
+<div class="last"><pre class="code bash"><a name="rest_code_777baff4c786411a8be20bdfc50e0d4d-1"></a>git checkout src
 </pre></div>
 </div>
 </div>
@@ -182,27 +183,27 @@ Si tienes dudas ejecuta:</p>
 (no es necesario que sepas usarlo para empezar a colaborar en el proyecto).</p>
 <p>Crea un entorno virtual para instalar las dependencias de Python
 (este paso debes hacerlo sólo una vez):</p>
-<pre class="code bash"><a name="rest_code_fc44cd2f273844f9adae331429fa1d10-1"></a>python -m venv venv
+<pre class="code bash"><a name="rest_code_09142f5d046d4d35b93bab240dbb496d-1"></a>python -m venv venv
 </pre>
 <p>Con ese comando acabamos de crear un entorno virtual llamado <tt class="docutils literal">venv</tt>.
 Puedes leer más sobre los entornos virtuales de Python en <a class="reference external" href="https://docs.python.org/3/library/venv.html">https://docs.python.org/3/library/venv.html</a>.</p>
 <p>Ahora necesitamos activar el entorno virtual
 (este paso debes hacerlo cada vez que abras una nuevo terminal):</p>
-<pre class="code bash"><a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-1"></a><span class="c1"># Para sistemas Linux y Mac</span>
-<a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-2"></a><span class="nb">source</span> venv/bin/activate
-<a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-3"></a>
-<a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-4"></a><span class="c1"># Para sistemas Windows</span>
-<a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-5"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-<a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-6"></a>
-<a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-7"></a><span class="c1"># Para sistemas Windows, usando Git bash</span>
-<a name="rest_code_5ec3a120c31d4986a37a18a54d9b8709-8"></a>venv/Scripts/activate
+<pre class="code bash"><a name="rest_code_c90da4133450486f913cf29438266f03-1"></a><span class="c1"># Para sistemas Linux y Mac</span>
+<a name="rest_code_c90da4133450486f913cf29438266f03-2"></a><span class="nb">source</span> venv/bin/activate
+<a name="rest_code_c90da4133450486f913cf29438266f03-3"></a>
+<a name="rest_code_c90da4133450486f913cf29438266f03-4"></a><span class="c1"># Para sistemas Windows</span>
+<a name="rest_code_c90da4133450486f913cf29438266f03-5"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+<a name="rest_code_c90da4133450486f913cf29438266f03-6"></a>
+<a name="rest_code_c90da4133450486f913cf29438266f03-7"></a><span class="c1"># Para sistemas Windows, usando Git bash</span>
+<a name="rest_code_c90da4133450486f913cf29438266f03-8"></a>venv/Scripts/activate
 </pre>
 <p>Ahora ya podemos instalar Nikola y otras dependencias:</p>
-<pre class="code bash"><a name="rest_code_372e60c29a9f4cd691fed6a02995b24c-1"></a>pip install -r requirements.txt
+<pre class="code bash"><a name="rest_code_5698e483942947ab9210d17bc180b3cf-1"></a>pip install -r requirements.txt
 </pre>
 <p>Finalmente, para ejecutar el sitio con Nikola</p>
-<pre class="code bash"><a name="rest_code_cd758f5469ff4559af6acf1570e00cfc-1"></a>nikola build
-<a name="rest_code_cd758f5469ff4559af6acf1570e00cfc-2"></a>nikola serve
+<pre class="code bash"><a name="rest_code_799414de142841009cc9e88ebb48fabc-1"></a>nikola build
+<a name="rest_code_799414de142841009cc9e88ebb48fabc-2"></a>nikola serve
 </pre>
 <p>Si abres tu navegador e ingresas a <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> podrás ver el sitio.</p>
 </div>
@@ -265,18 +266,18 @@ para clasificarlos por complejidad y/o tipo.</p>
 <p>Una vez que tengas un issue con cual trabajar.
 Crea una nueva rama con un nombre relacionado al issue que estás resolviendo.
 <cite>arregla-issue-13</cite> es el nombre de la rama usada en este ejemplo.</p>
-<pre class="code bash"><a name="rest_code_6d71443ff32d4dcea161cc1075a99dcc-1"></a>git checkout -b arregla-issue-13
+<pre class="code bash"><a name="rest_code_9358d167a2054e2db5519405253ba9f7-1"></a>git checkout -b arregla-issue-13
 </pre>
 <p>Haz los cambios que sean pertinentes para resolver el issue.
 Puedes ver los cambios en tu navegador mientras editas los archivos con el siguiente comando</p>
-<pre class="code bash"><a name="rest_code_a01899301fec4863bae21110040c13e3-1"></a>nikola auto
+<pre class="code bash"><a name="rest_code_480b62185f474791b7b63ac6435bfe2e-1"></a>nikola auto
 </pre>
 <p>Trata de hacer un commit por cada bloque de cambios relacionados que hagas</p>
-<pre class="code bash"><a name="rest_code_c23bd7ba01bf42f08c01f53fdc0a92f4-1"></a>git add archivo-editado.rst
-<a name="rest_code_c23bd7ba01bf42f08c01f53fdc0a92f4-2"></a>git commit -m <span class="s2">"Arreglada falta ortográfica"</span>
+<pre class="code bash"><a name="rest_code_0e803f972ecd4d0f9fe9308e79c1b1e6-1"></a>git add archivo-editado.rst
+<a name="rest_code_0e803f972ecd4d0f9fe9308e79c1b1e6-2"></a>git commit -m <span class="s2">"Arreglada falta ortográfica"</span>
 </pre>
 <p>Una vez que hayas hechos todos los cambios necesarios, súbelos a tu fork</p>
-<pre class="code bash"><a name="rest_code_ba473980c1ec419385013a4983d9e7c3-1"></a>git push -u origin arregla-issue-13
+<pre class="code bash"><a name="rest_code_44b4fba9b48542368a92b64c1dd70ead-1"></a>git push -u origin arregla-issue-13
 </pre>
 <p>Dirígete a la <a class="reference external" href="https://github.com/PythonEcuador/PythonEcuador.github.io">página del proyecto</a>
 y verás un mensaje sugiriéndote hacer un pull request (PR).
@@ -284,11 +285,11 @@ En la descripción del PR describe brevemente los cambios que hiciste.</p>
 <p>Espera a que un miembro de la comunidad revise tu PR,
 si son necesarios más cambios, los puedes hacer en la misma rama
 y repetir el proceso de agregar más commits.</p>
-<pre class="code bash"><a name="rest_code_2e39205fe8a94187903fb145f2c38ad4-1"></a>git add archivo-editado.rst
-<a name="rest_code_2e39205fe8a94187903fb145f2c38ad4-2"></a>git commit -m <span class="s2">"Más cambios"</span>
+<pre class="code bash"><a name="rest_code_58a19704086a4bfcb07a0f1cad934995-1"></a>git add archivo-editado.rst
+<a name="rest_code_58a19704086a4bfcb07a0f1cad934995-2"></a>git commit -m <span class="s2">"Más cambios"</span>
 </pre>
 <p>Una vez que ya los tengas listos, vuelve a subirlos</p>
-<pre class="code bash"><a name="rest_code_65df2337bb5341bca38293c6c6346a7e-1"></a>git push
+<pre class="code bash"><a name="rest_code_5a3281bad808425a8e98e328c213d45f-1"></a>git push
 </pre>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
@@ -359,19 +360,19 @@ debes hacer un par de pasos para igualar tu fork con los últimos cambios del re
 <p class="last">Asegúrate de repetir este proceso antes de tomar una nueva tarea.</p>
 </div>
 <p>Primero debemos cambiarnos nuevamente a la rama principal (<tt class="docutils literal">src</tt>).</p>
-<pre class="code bash"><a name="rest_code_4f1ebccde66a4099bdd142c73a79acc7-1"></a>git checkout src
+<pre class="code bash"><a name="rest_code_f61d23529952411ca69c5752f3ae54f6-1"></a>git checkout src
 </pre>
 <p>Asegúrate que no tengas cambios residuales de tu anterior PR
 antes de proceder con los siguientes pasos
 (puedes usar <tt class="docutils literal">git status</tt> para comprobarlo).</p>
 <p>Necesitaremos hacerle saber a git del repo principal con el siguiente comando.</p>
-<pre class="code bash"><a name="rest_code_7ddcdbb667c84da2a252e50af4bc1987-1"></a>git remote add upstream https://github.com/PythonEcuador/PythonEcuador.github.io.git
+<pre class="code bash"><a name="rest_code_a33ea73735e346958b77921d0c3c88e7-1"></a>git remote add upstream https://github.com/PythonEcuador/PythonEcuador.github.io.git
 </pre>
 <p>Ahora ya podemos bajarnos los últimos cambios del repo principal.</p>
-<pre class="code bash"><a name="rest_code_71059c17578843528bd77c511fced6ba-1"></a>git pull upstream src
+<pre class="code bash"><a name="rest_code_66a8b0d3ea4141d2968881575e3098f6-1"></a>git pull upstream src
 </pre>
 <p>Y los subimos a nuestro fork</p>
-<pre class="code bash"><a name="rest_code_63694e9a94664c9fa2a27e9e341fda5f-1"></a>git push origin src
+<pre class="code bash"><a name="rest_code_082f4e2ee01e4c1fa0f4e640382e4925-1"></a>git push origin src
 </pre>
 <p>Ahora si, puedes seguir los pasos indicados <a class="reference external" href="#realizando-cambios">arriba</a>
 para continuar con tu próximo pull request.</p>
@@ -410,13 +411,14 @@ y los archivos <em>compilados</em> se encuentran en <tt class="docutils literal"
     </div>
   </div>
 
-        </div>
         <!--End of body content-->
 
-        <footer id="footer"><div class="content">
-    <p id="followus">
-        <strong>Síguenos y forma parte de nuestra comunidad</strong>
-    </p>
+        <footer id="footer"><div class="container">
+    <div class="row text-center">
+        <div class="col">
+            <strong>Síguenos y forma parte de nuestra comunidad</strong>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <ul class="list-inline social text-center">
@@ -431,8 +433,8 @@ y los archivos <em>compilados</em> se encuentran en <tt class="docutils literal"
 </div>
         
     </div>
-    <div class="row">
-        <div class="text-center">
+    <div class="row text-center">
+        <div class="col">
             <p>Comunidad Python Ecuador</p>
             <small>© 2019 Todos los derechos reservados.</small>
             <p>
@@ -442,7 +444,6 @@ y los archivos <em>compilados</em> se encuentran en <tt class="docutils literal"
                 </small>
             </p>
         </div>
-        
     </div>
 </div>
 
@@ -452,10 +453,7 @@ y los archivos <em>compilados</em> se encuentran en <tt class="docutils literal"
 </div>
 
 
-            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("es");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {
