@@ -6,11 +6,19 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://python.ec/categories/comunidad.xml</loc>
+  <lastmod>2019-07-29T00:24:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://python.ec/categories/infraestructura.xml</loc>
+  <lastmod>2019-07-29T00:24:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://python.ec/rss.xml</loc>
-  <lastmod>2019-07-29T00:02:00Z</lastmod>
+  <lastmod>2019-07-29T00:24:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://python.ec/sitemap.xml</loc>
-  <lastmod>2019-07-29T00:02:00Z</lastmod>
+  <lastmod>2019-07-29T00:24:00Z</lastmod>
  </sitemap>
 </sitemapindex>
