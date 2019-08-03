@@ -85,14 +85,32 @@ navbar-dark bg-dark
 
   <div>
 <p>Esta guía es una breve introducción a los conceptos y la sintaxis de reStructuredText (reST).</p>
-<p>restructuredText es legible y simple, pero lo suficientemente potente para un uso no trivial.
-Es útil para la documentación de programas en línea (como las cadenas de documentación de Python),
+<p>reStructuredText es un lenguaje de marcado de texto, que es legible y simple de usar,
+pero lo suficientemente potente para un uso no trivial.
+Es útil para la documentación de programas en línea (como los docstrings de Python),
 para crear rápidamente páginas web simples y para documentos independientes.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Para seguir este tutorial te puedes ayudar de alguna herramienta para editar y previsualizar el resultado de la sintaxis RST.
+Lo puedes hacer online en <a class="reference external" href="https://livesphinx.herokuapp.com/">este sitio</a>.</p>
+</div>
 <div class="contents topic" id="contenidos">
 <p class="topic-title first">Contenidos</p>
 <ul class="simple">
 <li><a class="reference internal" href="#parrafo" id="id1">Párrafo</a></li>
 <li><a class="reference internal" href="#formato-de-texto-en-linea" id="id2">Formato de texto en línea</a></li>
+<li><a class="reference internal" href="#bloques-de-texto" id="id3">Bloques de texto</a></li>
+<li><a class="reference internal" href="#links-o-enlaces" id="id4">Links o enlaces</a></li>
+<li>
+<a class="reference internal" href="#listas" id="id5">Listas</a><ul>
+<li><a class="reference internal" href="#listas-desordenadas" id="id6">Listas desordenadas</a></li>
+<li><a class="reference internal" href="#lista-ordenada" id="id7">Lista ordenada</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#titulos-o-encabezados" id="id8">Títulos o encabezados</a></li>
+<li><a class="reference internal" href="#bloques-de-codigo" id="id9">Bloques de código</a></li>
+<li><a class="reference internal" href="#imagenes" id="id10">Imágenes</a></li>
+<li><a class="reference internal" href="#tablas" id="id11">Tablas</a></li>
 </ul>
 </div>
 <div class="section" id="parrafo">
@@ -101,65 +119,214 @@ para crear rápidamente páginas web simples y para documentos independientes.</
 Los párrafos son simplemente trozos de texto separados por una o más líneas en blanco.
 Al igual que en Python, la sangría es significativa en reST,
 por lo que todas las líneas del mismo párrafo deben alinearse a la izquierda con el mismo nivel de sangría.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="54%">
-<col width="46%">
-</colgroup>
-<thead valign="bottom"><tr>
-<th class="head">Texto Plano</th>
-<th class="head">Resultado</th>
-</tr></thead>
-<tbody valign="top"><tr>
-<td>
-<p class="first"><tt class="docutils literal">Este es un párrafo.</tt></p>
-<p class="last"><tt class="docutils literal">Los párrafos se alinean al</tt>
-<tt class="docutils literal">borde izquierdo y</tt>
-<tt class="docutils literal">normalmente están separados</tt>
-<tt class="docutils literal">por líneas en blanco.</tt></p>
-</td>
-<td>
-<p class="first">Este es un párrafo.</p>
-<p class="last">Los párrafos se alinean al
+<pre class="code rst"><a name="rest_code_1d0c47678199427882e51ee9ff4212b0-1"></a>Este es un párrafo.
+</pre>
+<p><strong>Resultado</strong></p>
+<p>Este es un párrafo</p>
+<pre class="code rst"><a name="rest_code_b2a833d8cfe645e5bc9eb587040e086d-1"></a>Los párrafos se alinean al
+<a name="rest_code_b2a833d8cfe645e5bc9eb587040e086d-2"></a>borde izquierdo y
+<a name="rest_code_b2a833d8cfe645e5bc9eb587040e086d-3"></a>normalmente están separados
+<a name="rest_code_b2a833d8cfe645e5bc9eb587040e086d-4"></a>por líneas en blanco.
+</pre>
+<p><strong>Resultado</strong></p>
+<p>Los párrafos se alinean al
 borde izquierdo y
 normalmente están separados
 por líneas en blanco.</p>
-</td>
-</tr></tbody>
-</table>
 </div>
 <div class="section" id="formato-de-texto-en-linea">
 <h2><a class="toc-backref" href="#id2">Formato de texto en línea</a></h2>
-<p>El formato de texto en línea permite que las palabras y frases dentro del texto tengan estilos de caracteres (como cursiva y negrita) y funcionalidad (como hipervínculos).</p>
+<p>El formato de texto en línea permite que las palabras y frases dentro del texto tengan estilos de caracteres
+(como cursiva y negrita) y funcionalidad (como hipervínculos).</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="51%">
-<col width="49%">
+<col width="50%">
+<col width="50%">
 </colgroup>
 <thead valign="bottom"><tr>
 <th class="head">Texto Plano</th>
 <th class="head">Resultado</th>
 </tr></thead>
-<tbody valign="top"><tr>
-<td>
-<div class="first last line-block">
-<div class="line"><tt class="docutils literal">*itálica*</tt></div>
-<div class="line"><tt class="docutils literal">**negrilla**</tt></div>
-<div class="line"><tt class="docutils literal">`link <span class="pre">&lt;https://pythonecuador.org&gt;`__</span></tt></div>
-<div class="line"><tt class="docutils literal">normalmente están separados</tt></div>
-<div class="line"><tt class="docutils literal">por líneas en blanco.</tt></div>
+<tbody valign="top">
+<tr>
+<td><tt class="docutils literal">*itálica*</tt></td>
+<td><em>itálica</em></td>
+</tr>
+<tr>
+<td><tt class="docutils literal">**negrita**</tt></td>
+<td><strong>negrita</strong></td>
+</tr>
+<tr>
+<td><tt class="docutils literal">`link <span class="pre">&lt;https://python.ec&gt;`__</span></tt></td>
+<td><a class="reference external" href="https://python.ec">link</a></td>
+</tr>
+<tr>
+<td><tt class="docutils literal"><span class="pre">https://python.ec</span></tt></td>
+<td><a class="reference external" href="https://python.ec">https://python.ec</a></td>
+</tr>
+</tbody>
+</table>
 </div>
-</td>
-<td>
-<div class="first last line-block">
-<div class="line"><em>itálica</em></div>
-<div class="line"><strong>negrilla</strong></div>
-<div class="line"><a class="reference external" href="https://pythonecuador.org">link</a></div>
-<div class="line">normalmente están separados</div>
-<div class="line">por líneas en blanco.</div>
+<div class="section" id="bloques-de-texto">
+<h2><a class="toc-backref" href="#id3">Bloques de texto</a></h2>
+<p>Es posible mostrar bloques de texto.
+Para esto se debe poner <tt class="docutils literal">::</tt> al final del párrafo para obtener algo como esto:</p>
+<pre class="code rst"><a name="rest_code_3642efb3d8a840dab9dd839590fd66b5-1"></a>Cualquier sangría o tabulación es parte del bloque preformateado.
+<a name="rest_code_3642efb3d8a840dab9dd839590fd66b5-2"></a>Incluso
+<a name="rest_code_3642efb3d8a840dab9dd839590fd66b5-3"></a>
+<a name="rest_code_3642efb3d8a840dab9dd839590fd66b5-4"></a>los
+<a name="rest_code_3642efb3d8a840dab9dd839590fd66b5-5"></a>saltos
+<a name="rest_code_3642efb3d8a840dab9dd839590fd66b5-6"></a>de línea     y      espacios.
+</pre>
 </div>
-</td>
-</tr></tbody>
+<div class="section" id="links-o-enlaces">
+<h2><a class="toc-backref" href="#id4">Links o enlaces</a></h2>
+<p>Si vas a usar un link en varias partes de un documento,
+puedes definir el URL por separado:</p>
+<pre class="code rst"><a name="rest_code_f56524935cfb442e91125a686d0fceb4-1"></a>Línea donde aparece el link_ definido por separado.
+<a name="rest_code_f56524935cfb442e91125a686d0fceb4-2"></a>
+<a name="rest_code_f56524935cfb442e91125a686d0fceb4-3"></a><span class="p">..</span> <span class="nt">_link:</span> https://url-link/defino/por/separadp
+</pre>
+<p>Rst nos da la facilidad de crear enlaces internos hacia el un documento.
+Para hacer esto podemos basarnos en el nombre de los encabezados que estén dentro de un archivo o documento,
+como por ejemplo este enlace <a class="reference external" href="#parrafo">Párrafo</a> me posiciona al inicio de este documento:</p>
+<pre class="code rst"><a name="rest_code_85c36739df2a4a568372dd2fcc4a60e3-1"></a>por ejemplo este enlace <span class="na">:ref:</span><span class="nv">`Párrafo &lt;parrafo&gt;`</span> me posiciona al inicio de este documento:
+</pre>
+</div>
+<div class="section" id="listas">
+<h2><a class="toc-backref" href="#id5">Listas</a></h2>
+<div class="section" id="listas-desordenadas">
+<h3><a class="toc-backref" href="#id6">Listas desordenadas</a></h3>
+<pre class="code rst"><a name="rest_code_e227bafd83144482a787141b4e191734-1"></a><span class="m">-</span> Elemento 1
+<a name="rest_code_e227bafd83144482a787141b4e191734-2"></a><span class="m">-</span> Elemento 2
+<a name="rest_code_e227bafd83144482a787141b4e191734-3"></a>    <span class="m">*</span> Elemento 3
+<a name="rest_code_e227bafd83144482a787141b4e191734-4"></a>        <span class="m">+</span> Elemento 4
+</pre>
+<p><strong>Resultado</strong></p>
+<ul class="simple">
+<li>Elemento 1</li>
+<li><dl class="first docutils">
+<dt>Elemento 2</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Elemento 3</dt>
+<dd><ul class="first last">
+<li>Elemento 4</li>
+</ul></dd>
+</dl></li>
+</ul></dd>
+</dl></li>
+</ul>
+</div>
+<div class="section" id="lista-ordenada">
+<h3><a class="toc-backref" href="#id7">Lista ordenada</a></h3>
+<pre class="code rst"><a name="rest_code_33e4fb83ecdb45d9b8ac4a5eddf9e9ec-1"></a><span class="m">#.</span> Elemento 1
+<a name="rest_code_33e4fb83ecdb45d9b8ac4a5eddf9e9ec-2"></a><span class="m">#.</span> Elemento 2
+<a name="rest_code_33e4fb83ecdb45d9b8ac4a5eddf9e9ec-3"></a><span class="m">#.</span> Elemento 3
+</pre>
+<p><strong>Resultado</strong></p>
+<ol class="arabic simple">
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+<li>Elemento 3</li>
+</ol>
+</div>
+</div>
+<div class="section" id="titulos-o-encabezados">
+<h2><a class="toc-backref" href="#id8">Títulos o encabezados</a></h2>
+<p>Los encabezados se crean subrayando el texto del encabezado con algún caracter,
+este subrayado debe ser al menos tan largo como el texto.</p>
+<p>La jerarquía de encabezados es dada por el orden, no por los caracteres.
+Podemos seguir  la <a class="reference external" href="https://devguide.python.org/documenting/#style-guide">guía de estilo de documentación de Python</a>
+que sigue esta convención para los títulos de encabezados.</p>
+<ul class="simple">
+<li>Subrayar con <strong>``#``</strong>, para encabezado de partes.</li>
+<li>Subrayar con <strong>``*``</strong>, para encabezado de capítulos.</li>
+<li>Subrayar con <strong>``=``</strong>, para encabezado de secciones (Título 1).</li>
+<li>Subrayar con <strong>``-``</strong>, para encabezado de sub secciones (Título 2).</li>
+<li>Subrayar con <strong>``^``</strong>, para encabezado de sub sub secciones (Título 3).</li>
+<li>subrayar con <strong>``"``</strong>, para los párrafos.</li>
+</ul>
+<p>Aquí la sintaxis de ejemplo:</p>
+<pre class="code rst"><a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-1"></a><span class="gh">#####################</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-2"></a><span class="gh">Título del documento</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-3"></a><span class="gh">#####################</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-4"></a>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-5"></a><span class="gh">Título de un capítulo</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-6"></a><span class="gh">*********************</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-7"></a>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-8"></a><span class="gh">Título de una sección (Titulo 1)</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-9"></a><span class="gh">================================</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-10"></a>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-11"></a><span class="gh">Título de una subsección (Titulo 2)</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-12"></a><span class="gh">-----------------------------------</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-13"></a>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-14"></a><span class="gh">Título de una sub-subsección (Titulo 3)</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-15"></a><span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-16"></a>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-17"></a><span class="gh">Soy un párrafo</span>
+<a name="rest_code_b8987b9a71844e3dac8e037a3f1a7292-18"></a><span class="gh">""""""""""""""</span>
+</pre>
+<p><strong>Resultado</strong></p>
+<img alt="/images/guias/rst/rst_encabezados.png" src="../../images/guias/rst/rst_encabezados.png">
+</div>
+<div class="section" id="bloques-de-codigo">
+<h2><a class="toc-backref" href="#id9">Bloques de código</a></h2>
+<p>En los bloques de código puedes agregar y mostrar código de cualquier lenguaje soportado:</p>
+<pre class="literal-block">
+.. code-block:: python
+
+   import os
+   print('Hellow World!')
+   print(help(os))
+</pre>
+<p><strong>Resultado</strong></p>
+<pre class="code python"><a name="rest_code_f0b366ec0d594db19a65544a053980ed-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a name="rest_code_f0b366ec0d594db19a65544a053980ed-2"></a><span class="k">print</span><span class="p">(</span><span class="s1">'Hellow World!'</span><span class="p">)</span>
+<a name="rest_code_f0b366ec0d594db19a65544a053980ed-3"></a><span class="k">print</span><span class="p">(</span><span class="n">help</span><span class="p">(</span><span class="n">os</span><span class="p">))</span>
+</pre>
+</div>
+<div class="section" id="imagenes">
+<h2><a class="toc-backref" href="#id10">Imágenes</a></h2>
+<p>Puedes añadir imágenes, usando la siguiente sintaxis:</p>
+<pre class="code rst"><a name="rest_code_c8ea4772dc5f4d5d847c5df357824fda-1"></a><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> screenshots/archivo-imagen.png
+<a name="rest_code_c8ea4772dc5f4d5d847c5df357824fda-2"></a>   <span class="nc">:height:</span> <span class="nf">100</span>
+<a name="rest_code_c8ea4772dc5f4d5d847c5df357824fda-3"></a>   <span class="nc">:width:</span> <span class="nf">200</span>
+<a name="rest_code_c8ea4772dc5f4d5d847c5df357824fda-4"></a>   <span class="nc">:alt:</span> <span class="nf">alternate text</span>
+</pre>
+</div>
+<div class="section" id="tablas">
+<h2><a class="toc-backref" href="#id11">Tablas</a></h2>
+<pre class="code rst"><a name="rest_code_5a056173ed374555b0e8e15016ffae80-1"></a><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span>
+<a name="rest_code_5a056173ed374555b0e8e15016ffae80-2"></a>   <span class="nc">:header:</span> <span class="nf">"Uno", "Dos", "Tres"</span>
+<a name="rest_code_5a056173ed374555b0e8e15016ffae80-3"></a>
+<a name="rest_code_5a056173ed374555b0e8e15016ffae80-4"></a>   "Fila uno", "Fila dos", "Fila tres"
+<a name="rest_code_5a056173ed374555b0e8e15016ffae80-5"></a>   "Fila uno", "Fila dos", "Fila tres"
+</pre>
+<p><strong>Resultado</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head">Uno</th>
+<th class="head">Dos</th>
+<th class="head">Tres</th>
+</tr></thead>
+<tbody valign="top">
+<tr>
+<td>Fila uno</td>
+<td>Fila dos</td>
+<td>Fila tres</td>
+</tr>
+<tr>
+<td>Fila uno</td>
+<td>Fila dos</td>
+<td>Fila tres</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
