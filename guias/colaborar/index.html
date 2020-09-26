@@ -132,12 +132,12 @@ no dudes en preguntar en <a class="reference external" href="https://t.me/python
 <p>Este proyecto usa Python 3, puedes descargarlo desde <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.
 Para verificar que tienes Python 3 en tu sistema ejecuta el siguiente comando en una terminal
 (ventana de comandos):</p>
-<pre class="code console"><a name="rest_code_daec6ded2f7a473b8fc5aee815662b9a-1"></a><span class="gp">$</span> python --version
-<a name="rest_code_daec6ded2f7a473b8fc5aee815662b9a-2"></a><span class="go">Python 3.6.5</span>
+<pre class="code console"><a name="rest_code_e9cfaf5d54814a90b92fc77cedde2c47-1"></a><span class="gp">$</span> python --version
+<a name="rest_code_e9cfaf5d54814a90b92fc77cedde2c47-2"></a><span class="go">Python 3.6.5</span>
 </pre>
 <p>Si el comando anterior no funcionó en Windows puedes intentar:</p>
-<pre class="code console"><a name="rest_code_9cc66123bbaa4487949f3033119964e9-1"></a><span class="gp">&gt;</span> py --version
-<a name="rest_code_9cc66123bbaa4487949f3033119964e9-2"></a><span class="go">Python 3.6.5</span>
+<pre class="code console"><a name="rest_code_440825d68018444db590e62113fc2437-1"></a><span class="gp">&gt;</span> py --version
+<a name="rest_code_440825d68018444db590e62113fc2437-2"></a><span class="go">Python 3.6.5</span>
 </pre>
 <p>Si la salida del comando es diferente, no te preocupes, sólo debes asegurarte que el primer número sea un <tt class="docutils literal">3</tt>.
 En caso que la salida haya sido algo como <tt class="docutils literal">2.7.14</tt>, intenta con el comando <tt class="docutils literal">python3 <span class="pre">--version</span></tt>.</p>
@@ -156,8 +156,8 @@ debes usar ese comando.</p>
 puedes descargar Git desde <a class="reference external" href="https://git-scm.com/download">https://git-scm.com/download</a>.</p>
 <p>Luego de instalar Git se debe configurar el usuario y el correo electrónico con
 los siguientes comandos:</p>
-<pre class="code bash"><a name="rest_code_7df6d366dc194351929df10593c9d2d4-1"></a>git config --global user.name <span class="s2">"Juanito Perez"</span>
-<a name="rest_code_7df6d366dc194351929df10593c9d2d4-2"></a>git config --global user.email <span class="s2">"juanito@perez.com"</span>
+<pre class="code bash"><a name="rest_code_dfeac6870af0405b8f3f7bac15763919-1"></a>git config --global user.name <span class="s2">"Juanito Perez"</span>
+<a name="rest_code_dfeac6870af0405b8f3f7bac15763919-2"></a>git config --global user.email <span class="s2">"juanito@perez.com"</span>
 </pre>
 <p>Debes tener una cuenta en <a class="reference external" href="https://github.com/">GitHub</a>, inicia sesión,
 dirígete al <a class="reference external" href="https://github.com/PythonEcuador/PythonEcuador.github.io">proyecto de Python Ecuador</a>
@@ -168,20 +168,20 @@ y presiona el botón <tt class="docutils literal">Fork</tt> para hacer un fork d
 </div>
 <img alt="/images/guias/colaborar/fork.png" class="align-center" src="../../images/guias/colaborar/fork.png"><p>Ejecuta el siguiente comando en una terminal para obtener el código.
 Donde <tt class="docutils literal"><span class="pre">{tu-usuario}</span></tt> es tu usuario de GitHub.</p>
-<pre class="code bash"><a name="rest_code_eb0bae19875241738606119bb341461b-1"></a>git clone https://github.com/<span class="o">{</span>tu-usuario<span class="o">}</span>/PythonEcuador.github.io.git
+<pre class="code bash"><a name="rest_code_e6fd0028c38341e098deea047f63f089-1"></a>git clone https://github.com/<span class="o">{</span>tu-usuario<span class="o">}</span>/PythonEcuador.github.io.git
 </pre>
 <p>Por ejemplo, para el usuario <tt class="docutils literal">Marlon5300</tt>:</p>
-<pre class="code bash"><a name="rest_code_532ed41011da41658f90c4ae6eb41d3b-1"></a>git clone https://github.com/Marlon5300/PythonEcuador.github.io.git
+<pre class="code bash"><a name="rest_code_3dbbb10fda6446a7b5a078575316020f-1"></a>git clone https://github.com/Marlon5300/PythonEcuador.github.io.git
 </pre>
 <p>Entra al directorio que contiene el código fuente con</p>
-<pre class="code bash"><a name="rest_code_a135822aec4f4040b81dc0cda59edc59-1"></a><span class="nb">cd</span> PythonEcuador.github.io
+<pre class="code bash"><a name="rest_code_d436b80a9c1d471bae2bdf03e806f153-1"></a><span class="nb">cd</span> PythonEcuador.github.io
 </pre>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
 <p>El desarrollo se lleva a cabo sobre la rama <tt class="docutils literal">src</tt>.
 Por defecto tu repositorio debe estar en esta rama.
 Si tienes dudas ejecuta:</p>
-<div class="last"><pre class="code bash"><a name="rest_code_e58b129e47954c3bb618c500c9c02211-1"></a>git checkout src
+<div class="last"><pre class="code bash"><a name="rest_code_0db3df96e3b543608236bc1056577dc2-1"></a>git checkout src
 </pre></div>
 </div>
 </div>
@@ -191,29 +191,29 @@ Si tienes dudas ejecuta:</p>
 (no es necesario que sepas usarlo para empezar a colaborar en el proyecto).</p>
 <p>Crea un entorno virtual para instalar las dependencias de Python
 (este paso debes hacerlo sólo una vez):</p>
-<pre class="code bash"><a name="rest_code_ed4e3c9e34984f2bb45d2bbb7f3aaf69-1"></a>python -m venv venv
+<pre class="code bash"><a name="rest_code_fac897a6909142299dec806fc47ab313-1"></a>python -m venv venv
 </pre>
 <p>Con ese comando acabamos de crear un entorno virtual llamado <tt class="docutils literal">venv</tt>.
 Puedes leer más sobre los entornos virtuales de Python en <a class="reference external" href="https://docs.python.org/3/library/venv.html">https://docs.python.org/3/library/venv.html</a>.</p>
 <p>Ahora necesitamos activar el entorno virtual
 (este paso debes hacerlo cada vez que abras una nuevo terminal):</p>
-<pre class="code bash"><a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-1"></a><span class="c1"># Para sistemas Linux y Mac</span>
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-2"></a><span class="nb">source</span> venv/bin/activate
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-3"></a>
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-4"></a><span class="c1"># Para sistemas Windows</span>
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-5"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-6"></a>
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-7"></a><span class="c1"># Para sistemas Windows, usando Git bash</span>
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-8"></a>venv/Scripts/activate
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-9"></a><span class="c1"># Si el comando anterior no funciona puedes probar:</span>
-<a name="rest_code_995e1edd2b3e4f4b8d475170bba859ec-10"></a><span class="nb">source</span> venv/Scripts/activate
+<pre class="code bash"><a name="rest_code_4961dee3997448d9b2e3267b14074c88-1"></a><span class="c1"># Para sistemas Linux y Mac</span>
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-2"></a><span class="nb">source</span> venv/bin/activate
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-3"></a>
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-4"></a><span class="c1"># Para sistemas Windows</span>
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-5"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-6"></a>
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-7"></a><span class="c1"># Para sistemas Windows, usando Git bash</span>
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-8"></a>venv/Scripts/activate
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-9"></a><span class="c1"># Si el comando anterior no funciona puedes probar:</span>
+<a name="rest_code_4961dee3997448d9b2e3267b14074c88-10"></a><span class="nb">source</span> venv/Scripts/activate
 </pre>
 <p>Ahora ya podemos instalar Nikola y otras dependencias:</p>
-<pre class="code bash"><a name="rest_code_6e7976572cb7458394e24d4d4f708b98-1"></a>pip install -r requirements.txt
+<pre class="code bash"><a name="rest_code_116f5280ddca44f196d0c0e14314072a-1"></a>pip install -r requirements.txt
 </pre>
 <p>Finalmente, para ejecutar el sitio con Nikola</p>
-<pre class="code bash"><a name="rest_code_4eafe5193e6d4501992764b246138186-1"></a>nikola build
-<a name="rest_code_4eafe5193e6d4501992764b246138186-2"></a>nikola serve
+<pre class="code bash"><a name="rest_code_ec61a31fe5344775b59b99fa9c0724e3-1"></a>nikola build
+<a name="rest_code_ec61a31fe5344775b59b99fa9c0724e3-2"></a>nikola serve
 </pre>
 <p>Si abres tu navegador e ingresas a <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> podrás ver el sitio.</p>
 </div>
@@ -272,18 +272,18 @@ para clasificarlos por complejidad y/o tipo.</p>
 <p>Una vez que tengas un issue con cual trabajar.
 Crea una nueva rama con un nombre relacionado al issue que estás resolviendo.
 <cite>arregla-issue-13</cite> es el nombre de la rama usada en este ejemplo.</p>
-<pre class="code bash"><a name="rest_code_0629cc7c225a4c09a4768b432ffecb6e-1"></a>git checkout -b arregla-issue-13
+<pre class="code bash"><a name="rest_code_2d78340ecc5f4144ab41f8b91bf06e99-1"></a>git checkout -b arregla-issue-13
 </pre>
 <p>Haz los cambios que sean pertinentes para resolver el issue.
 Puedes ver los cambios en tu navegador mientras editas los archivos con el siguiente comando</p>
-<pre class="code bash"><a name="rest_code_7c88de3dcfea41d1a71f3c5344bdb3f9-1"></a>nikola auto
+<pre class="code bash"><a name="rest_code_2c0555dbc589485fb5ae8bb39a4fff0a-1"></a>nikola auto
 </pre>
 <p>Trata de hacer un commit por cada bloque de cambios relacionados que hagas</p>
-<pre class="code bash"><a name="rest_code_16da116fa4f54c48afb010a48a570ffe-1"></a>git add archivo-editado.rst
-<a name="rest_code_16da116fa4f54c48afb010a48a570ffe-2"></a>git commit -m <span class="s2">"Arreglada falta ortográfica"</span>
+<pre class="code bash"><a name="rest_code_14740df9294641189d2c49abb6c86596-1"></a>git add archivo-editado.rst
+<a name="rest_code_14740df9294641189d2c49abb6c86596-2"></a>git commit -m <span class="s2">"Arreglada falta ortográfica"</span>
 </pre>
 <p>Una vez que hayas hechos todos los cambios necesarios, súbelos a tu fork</p>
-<pre class="code bash"><a name="rest_code_5d63bbc87dde4542bcafd36606357bf6-1"></a>git push -u origin arregla-issue-13
+<pre class="code bash"><a name="rest_code_b16d16b4ff584afbaba08d806fadd1c2-1"></a>git push -u origin arregla-issue-13
 </pre>
 <p>Dirígete a la <a class="reference external" href="https://github.com/PythonEcuador/PythonEcuador.github.io">página del proyecto</a>
 y verás un mensaje sugiriéndote hacer un pull request (PR).
@@ -291,11 +291,11 @@ En la descripción del PR describe brevemente los cambios que hiciste, no olvida
 <p>Espera a que un miembro de la comunidad revise tu PR,
 si son necesarios más cambios, los puedes hacer en la misma rama
 y repetir el proceso de agregar más commits.</p>
-<pre class="code bash"><a name="rest_code_cb62d3a3322e4d1099a1e39f553ce23e-1"></a>git add archivo-editado.rst
-<a name="rest_code_cb62d3a3322e4d1099a1e39f553ce23e-2"></a>git commit -m <span class="s2">"Más cambios"</span>
+<pre class="code bash"><a name="rest_code_ceec5aa3ac6a4e9585bdc867771870d1-1"></a>git add archivo-editado.rst
+<a name="rest_code_ceec5aa3ac6a4e9585bdc867771870d1-2"></a>git commit -m <span class="s2">"Más cambios"</span>
 </pre>
 <p>Una vez que ya los tengas listos, vuelve a subirlos</p>
-<pre class="code bash"><a name="rest_code_bee04e85f34e4f8abaa2571fbbb77d18-1"></a>git push
+<pre class="code bash"><a name="rest_code_aa8f45bffb444728b85cc1304c8a0a29-1"></a>git push
 </pre>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
@@ -366,19 +366,19 @@ debes hacer un par de pasos para igualar tu fork con los últimos cambios del re
 <p class="last">Asegúrate de repetir este proceso antes de tomar una nueva tarea.</p>
 </div>
 <p>Primero debemos cambiarnos nuevamente a la rama principal (<tt class="docutils literal">src</tt>).</p>
-<pre class="code bash"><a name="rest_code_2b500f5daf234542a37b49b9c6eec5be-1"></a>git checkout src
+<pre class="code bash"><a name="rest_code_185418f2fc56477aa50c7da08f044579-1"></a>git checkout src
 </pre>
 <p>Asegúrate que no tengas cambios residuales de tu anterior PR
 antes de proceder con los siguientes pasos
 (puedes usar <tt class="docutils literal">git status</tt> para comprobarlo).</p>
 <p>Necesitaremos hacerle saber a git del repo principal con el siguiente comando.</p>
-<pre class="code bash"><a name="rest_code_5cedfee38fe940e9bfac595796a4b905-1"></a>git remote add upstream https://github.com/PythonEcuador/PythonEcuador.github.io.git
+<pre class="code bash"><a name="rest_code_65ea185c47d64d829eab35c1a1b8a4c1-1"></a>git remote add upstream https://github.com/PythonEcuador/PythonEcuador.github.io.git
 </pre>
 <p>Ahora ya podemos bajarnos los últimos cambios del repo principal.</p>
-<pre class="code bash"><a name="rest_code_0befd9c5aaea4f64aaf0de576e5e4c29-1"></a>git pull upstream src
+<pre class="code bash"><a name="rest_code_e32b347abf1c4e6085e6d3c9c6788a4d-1"></a>git pull upstream src
 </pre>
 <p>Y los subimos a nuestro fork</p>
-<pre class="code bash"><a name="rest_code_2843328883d54d589144729f6d2c0052-1"></a>git push origin src
+<pre class="code bash"><a name="rest_code_24618f8bb3a448e59edb65831f1a8aff-1"></a>git push origin src
 </pre>
 <p>Ahora si, puedes seguir los pasos indicados <a class="reference external" href="#realizando-cambios">arriba</a>
 para continuar con tu próximo pull request.</p>
